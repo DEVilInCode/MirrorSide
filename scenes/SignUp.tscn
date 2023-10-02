@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwnlg4m4mgbkg"]
+[gd_scene load_steps=3 format=3 uid="uid://dwnlg4m4mgbkg"]
 
+[ext_resource type="Script" path="res://scripts/PasswordTextBox.cs" id="1_eiexk"]
 [ext_resource type="Script" path="res://scripts/ExitButton.cs" id="1_mycum"]
 
 [node name="Sign Up" type="Control"]
@@ -12,51 +13,72 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 1154.0
-offset_bottom = 649.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -117.5
+offset_right = 211.0
+offset_bottom = 148.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
 alignment = 1
 
-[node name="UsernameTextBox" type="TextEdit" parent="VBoxContainer"]
+[node name="UsernameTextBox" type="LineEdit" parent="VBoxContainer"]
 custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 placeholder_text = "Username"
+max_length = 10
 
-[node name="EmailTextBox" type="TextEdit" parent="VBoxContainer"]
+[node name="EmailTextBox" type="LineEdit" parent="VBoxContainer"]
 custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 placeholder_text = "Example@email.com"
+max_length = 100
 
-[node name="PasswordTextBox" type="TextEdit" parent="VBoxContainer"]
+[node name="PasswordTextBox" type="LineEdit" parent="VBoxContainer"]
 custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 placeholder_text = "Password"
+secret = true
+script = ExtResource("1_eiexk")
 
-[node name="Re-PasswordTextBox" type="TextEdit" parent="VBoxContainer"]
+[node name="Re-PasswordTextBox" type="LineEdit" parent="VBoxContainer"]
 custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 placeholder_text = "Repeat password"
+secret = true
 
 [node name="SignUpButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(130, 50)
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_vertical = 10
 text = "Sign Up"
 
 [node name="ExitButton" type="Button" parent="."]
-offset_left = 1066.0
-offset_top = 24.0
-offset_right = 1124.0
-offset_bottom = 57.0
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 0
+offset_left = 980.0
+offset_top = 20.0
+offset_right = 1110.0
+offset_bottom = 70.0
+size_flags_horizontal = 8
+size_flags_vertical = 4
 text = "Exit"
 script = ExtResource("1_mycum")
 
+[connection signal="text_changed" from="VBoxContainer/PasswordTextBox" to="VBoxContainer/PasswordTextBox" method="OnTextChanged"]
 [connection signal="pressed" from="ExitButton" to="ExitButton" method="OnPressed"]
