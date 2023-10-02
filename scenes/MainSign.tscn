@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://l75j517urfa4"]
+
+[ext_resource type="Script" path="res://scripts/ExitButton.cs" id="1_12apj"]
+
+[node name="MainSign" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 649.0
+alignment = 1
+
+[node name="SignUpButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Sign up
+"
+
+[node name="SignInButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Sign In"
+
+[node name="GmailButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Gmail"
+
+[node name="ExitButton" type="Button" parent="."]
+offset_left = 1066.0
+offset_top = 24.0
+offset_right = 1124.0
+offset_bottom = 57.0
+text = "Exit"
+script = ExtResource("1_12apj")
+
+[connection signal="pressed" from="ExitButton" to="ExitButton" method="OnPressed"]

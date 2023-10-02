@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxd1k8oyttler"]
+
+[ext_resource type="Script" path="res://scripts/LevelScript.cs" id="1_ortpy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b1u04"]
+
+[node name="MainScreen" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="BattleButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 555.0
+offset_right = 101.0
+offset_bottom = 628.0
+text = "Battle"
+
+[node name="MenuButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 555.0
+offset_right = 1131.0
+offset_bottom = 628.0
+text = "Menu"
+
+[node name="SettingsButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 1119.0
+offset_top = 7.0
+offset_right = 1144.0
+offset_bottom = 30.0
+icon = SubResource("CompressedTexture2D_b1u04")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 59.0
+offset_bottom = 40.0
+text = "Level:"
+script = ExtResource("1_ortpy")
