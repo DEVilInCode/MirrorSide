@@ -8,6 +8,12 @@ public partial class Player : Node
 	private int _crystals;
 	private int _credits;
 
+	public Player(){
+		
+		if(true)
+			_level = _gold = _crystals = _credits = 0;
+	}
+
 	public int Level {
 		get { return _level; }
 	}

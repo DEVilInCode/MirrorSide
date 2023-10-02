@@ -37,6 +37,7 @@ size_flags_vertical = 4
 text = "Gmail"
 
 [node name="ExitButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1066.0
 offset_top = 24.0
 offset_right = 1124.0
