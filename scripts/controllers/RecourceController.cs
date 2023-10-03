@@ -1,14 +1,14 @@
 using Godot;
 using System;
 
-public partial class Player : Node
+public partial class RecourceController : Node
 {
 	private int _level;
 	private int _gold;
 	private int _crystals;
 	private int _credits;
 
-	public Player(){
+	public RecourceController(){
 
 		if(true)
 			_level = _gold = _crystals = _credits = 0;
