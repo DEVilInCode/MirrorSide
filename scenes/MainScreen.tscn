@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkubffyy7sfrw"]
 
-[ext_resource type="Script" path="res://scripts/Player.cs" id="1_nyfy0"]
-[ext_resource type="Script" path="res://scripts/RecourcesInfo.cs" id="2_13qu3"]
+[ext_resource type="Script" path="res://scripts/controllers/Player.cs" id="1_nyfy0"]
+[ext_resource type="Script" path="res://scripts/controllers/RecourcesInfo.cs" id="2_13qu3"]
 
 [node name="MainScreen" type="Node2D"]
 

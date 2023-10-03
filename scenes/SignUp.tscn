@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwnlg4m4mgbkg"]
 
-[ext_resource type="Script" path="res://scripts/PasswordTextBox.cs" id="1_eiexk"]
-[ext_resource type="Script" path="res://scripts/ExitButton.cs" id="1_mycum"]
+[ext_resource type="Script" path="res://scripts/UI/PasswordTextBox.cs" id="1_eiexk"]
+[ext_resource type="Script" path="res://scripts/UI/ExitButton.cs" id="1_mycum"]
 
 [node name="Sign Up" type="Control"]
 layout_mode = 3

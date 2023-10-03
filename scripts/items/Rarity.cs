@@ -1,6 +1,6 @@
 using System;
 
-enum Rarity
+public enum Rarity
 {
 	Common = 1,
 	Uncommon,

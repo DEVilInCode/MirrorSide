@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://l75j517urfa4"]
 
-[ext_resource type="Script" path="res://scripts/ExitButton.cs" id="1_12apj"]
+[ext_resource type="Script" path="res://scripts/UI/ExitButton.cs" id="1_12apj"]
 
 [node name="MainSign" type="Control"]
 layout_mode = 3
