@@ -10,6 +10,6 @@ Language: C#/GDScript
 
 SRS of program
 
-User interface images
+[User interface images](mockups)
 
 [Code](scripts)
