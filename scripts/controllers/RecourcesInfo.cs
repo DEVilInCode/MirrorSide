@@ -1,18 +1,16 @@
 using Godot;
 using Godot.Collections;
 using System;
-using System.Linq;
-using System.Reflection;
 
 public partial class RecourcesInfo : HBoxContainer
 {
-	private Player _player;
-	private readonly Type _playerType = typeof(Player);
+	private RecourceController _player;
+	private readonly Type _playerType = typeof(RecourceController);
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		_player = GetNode<Player>("../Player");
+		_player = GetNode<RecourceController>("../Player");
 		Array<Node> recources = GetChildren();
 
 		foreach(var recource in recources)
