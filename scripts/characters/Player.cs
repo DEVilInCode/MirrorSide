@@ -7,6 +7,7 @@ public abstract class Player
     public string Name;
     public Deck Deck;
     public List<Card> Hand;
+    
     public int Mana = 0;
 
     Player(int health, string name, Deck deck)
