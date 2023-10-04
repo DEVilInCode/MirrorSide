@@ -8,7 +8,7 @@ Engine: [Godot](https://godotengine.org/)
 
 Language: C#/GDScript
 
-SRS of program
+[SRS of program](requirements)
 
 [User interface images](mockups)
 
