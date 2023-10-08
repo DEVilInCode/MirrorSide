@@ -2,14 +2,14 @@
 
 This program allows you to play in CCG.
 
-Operation system: Android
+Operation system: Cross-platform(DEV)
 
-Engine: [Godot](https://godotengine.org/)
+Engine: Unity
 
-Language: C#/GDScript
+Language: C#
 
 [SRS of program](requirements)
 
 [User interface images](mockups)
 
-[Code](scripts)
+[Code](Client/Scripts)
