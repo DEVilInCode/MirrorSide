@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013bb0d991ce4f04c97c9b9a3b98a2ec, type: 3}
+  m_Name: Puppy
+  m_EditorClassIdentifier: 
+  Name: Puppy
+  Sprite: {fileID: 0}
+  Description: Too cute to kill. U can but u will die. Ill say u. U will die. (c)
+    VirtualSatan
+  Cost: 0
+  Rarity: 1
+  Unique: 0
+  Health: 1
+  Damage: 0
