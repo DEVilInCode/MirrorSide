@@ -8,8 +8,8 @@ Engine: Unity
 
 Language: C#
 
-[SRS of program](requirements)
+[SRS of program](Requirements)
 
-[User interface images](mockups)
+[User interface images](Mockups)
 
-[Code](Client/Scripts)
+[Code](Assets/Client/Scripts)
