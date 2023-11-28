@@ -10,6 +10,6 @@ Language: C#
 
 [SRS of program](Requirements)
 
-[User interface images](Mockups)
+[User interface images](mockups)
 
 [Code](Assets/Client/Scripts)
