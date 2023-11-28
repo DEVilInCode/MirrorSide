@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OPzK0X0Q+EjUL74/UM8aLjJurl2cQF1o1Ym3u0nshO2DjRJKAoiM2/ZhqJnR5kifye1fBBPwg2N46h6aT7b8nw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lucifer\\Desktop\\Server\\GameServer\\SharedLibrary\\SharedLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lucifer\\.nuget\\packages\\mongodb.bson\\2.22.0\\mongodb.bson.2.22.0.nupkg.sha512",
+    "C:\\Users\\Lucifer\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Lucifer\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
