@@ -1,7 +1,7 @@
-﻿using Server.Game.Cards;
+﻿using Server.GameLogic.Cards;
 using System.Collections;
 
-namespace Server.Game
+namespace Server.GameLogic
 {
     public class Hand
     {

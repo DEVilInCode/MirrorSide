@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server.Game
+namespace Server.GameLogic
 {
     public class Mana
     {

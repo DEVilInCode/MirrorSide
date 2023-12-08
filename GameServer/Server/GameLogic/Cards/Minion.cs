@@ -1,4 +1,4 @@
-﻿namespace Server.Game.Cards
+﻿namespace Server.GameLogic.Cards
 {
     public class Minion : Card
     {

@@ -1,6 +1,6 @@
 ﻿using SharedLibrary.General;
 
-namespace Server.Game.Cards
+namespace Server.GameLogic.Cards
 {
     public abstract class Card
     {

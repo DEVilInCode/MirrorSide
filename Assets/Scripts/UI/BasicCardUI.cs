@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 ///<summary>
-///Класс отвечает за отображение общих полей на картах
+///пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 ///<summary>
 public abstract class BasicCardUI : MonoBehaviour
 {

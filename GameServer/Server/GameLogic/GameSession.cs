@@ -1,18 +1,13 @@
-﻿using Server.Game.Cards;
+﻿using Server.GameLogic.Cards;
 using System.Diagnostics;
 
-namespace Server.Game
+namespace Server.GameLogic
 {
     public class GameSession
     {
-        private const int MAX_MINIONS = 7;
-        
         private Player Player1 { get; set; }
-        private List<Card> player1Field = new(MAX_MINIONS);
 
         private Player Player2 { get; set; }
-        private List<Card> player2Field = new(MAX_MINIONS);
-
 
         private Random random;
         bool firstPlayerTurn;

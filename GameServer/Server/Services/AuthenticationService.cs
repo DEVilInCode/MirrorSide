@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using MongoDB.Driver.Linq;
 
 namespace Server.Services;
 
@@ -20,21 +21,21 @@ public class AuthenticationService : IAuthenticationService
         _context = context;
     }
 
-    public (bool success, string content) Register(string username, string password)
+    public async Task<(bool success, string content)> RegisterAsync(string username, string password)
     {
-        if (_context.Users.Find(u => u.Username == username).Any()) return (false, "Username is not available");
+        if (_context.Users.Any(u => u.Username == username)) return (false, "Username is not available");
 
         User user = new() { Username = username, PasswordHash = password };
         user.ProvideSaltAndHash();
 
-        _context.AddUser(user);
+        await _context.AddUserAsync(user);
 
         return (true, "");
     }
 
-    public (bool success, string token) Login(string username, string password)
+    public async Task<(bool success, string token)> LoginAsync(string username, string password)
     {
-        User user = _context.Users.Find(u => u.Username == username).FirstOrDefault();
+        User? user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         if (user == null) return (false, "Invalid username");
 
         if (user.PasswordHash != AuthenticationHelpers.ComputeHash(password, user.Salt)) return (false, "Invalid password");
@@ -71,8 +72,8 @@ public class AuthenticationService : IAuthenticationService
 
 public interface IAuthenticationService
 {
-    (bool success, string content) Register(string username, string password);
-    (bool success, string token) Login(string username, string password);
+    Task<(bool success, string content)> RegisterAsync(string username, string password);
+    Task<(bool success, string token)> LoginAsync(string username, string password);
 }
 
 public static class AuthenticationHelpers
